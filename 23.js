@@ -1,3 +1,2 @@
-let firstName = "Nir";
-// console.log(firstName);
-// console.log();
+let fruits = ["Apple", "Grapes", "Banana"];
+console.log(fruits);
