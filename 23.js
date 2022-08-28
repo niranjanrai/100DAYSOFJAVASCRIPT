@@ -53,3 +53,23 @@ let firstName = "Shravan";
 // console.log(firstName.slice(0, 2)); // starting index 0, end index 2;
 // console.log(firstName.slice(0, 5)); // starting index 0, end index 5;
 // last index not considered
+
+//Types of Operator
+// Datatypes
+/*
+  -String
+  -Number
+  -Booleans
+  -Undefined
+  -Null
+  -Symbol
+  -BigInt
+
+*/
+
+// let num = 25;
+// console.log(typeof num);
+// console.log(num + "");
+// console.log(typeof (num + ""));
+// age = String(num);
+// console.log(typeof age);
