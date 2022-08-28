@@ -15,6 +15,15 @@
 // firstName();
 // lastName();
 
-const site = ["eyeHunts"];
-var res = site[0].toUpperCase() + site.substr(1);
-console.log(res);
+// const site = ["eyeHunts"];
+// var res = site[0].toUpperCase() + site.substr(1);
+// console.log(res);
+
+// Variable
+// declare a variable
+var firstName = "Niranjan";
+
+// Use a Variable
+console.log(firstName);
+
+console.log(firstName);
