@@ -3,8 +3,8 @@
 
 for (let i = 0; i <= 10; i++) {
   if (i === 5) {
-    break;
-    // continue;
+    // break;
+    continue; // will skip himself
   }
   console.log(i);
 }
