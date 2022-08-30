@@ -29,3 +29,10 @@ console.log(fruits);
 // to check there is funtion
 console.log(Array.isArray(fruits)); // true
 // if the value of isArray function is true that means it is array otherwise it it not.
+// this method is useful when we work with object because the typeof aarays and object both are object
+
+// example
+let obj = {};
+let arr = [];
+console.log(typeof obj, typeof arr); // both are object
+// at that time isArray function is helpful
