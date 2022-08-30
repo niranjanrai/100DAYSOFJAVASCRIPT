@@ -24,3 +24,8 @@ console.log(typeof mixed);
 console.log(fruits);
 fruits[1] = "Banana"; // banana
 console.log(fruits);
+
+// how to check that is array or not
+// to check there is funtion
+console.log(Array.isArray(fruits)); // true
+// if the value of isArray function is true that means it is array otherwise it it not.
