@@ -18,3 +18,9 @@ let mixed = [1, 0.1, "nir", true, undefined, null];
 console.log(mixed);
 console.log(typeof mixed);
 // typeof array is object
+
+// array is mutable
+// that means we can change the value of array
+console.log(fruits);
+fruits[1] = "Banana"; // banana
+console.log(fruits);
