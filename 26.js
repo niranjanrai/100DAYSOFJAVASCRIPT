@@ -1,0 +1,20 @@
+// Array in Js
+// Array is reference type
+// it is object of js
+// array is collection of element
+// ordered collection of item/elements
+let fruits = ["apple", "mango", "grapes"];
+console.log(fruits);
+// arrays also has index and we can access any value with the help of index
+// like
+console.log(fruits[0]); // apple
+console.log(fruits[1]); // mango
+// array also store number
+let num = [1, 2, 3, 4, 5, 6];
+console.log(num);
+// it also store mixed value like string num undefined null
+// example
+let mixed = [1, 0.1, "nir", true, undefined, null];
+console.log(mixed);
+console.log(typeof mixed);
+// typeof array is object
