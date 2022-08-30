@@ -24,5 +24,3 @@ console.log(typeof mixed);
 console.log(fruits);
 fruits[1] = "Banana"; // banana
 console.log(fruits);
-//
-//
