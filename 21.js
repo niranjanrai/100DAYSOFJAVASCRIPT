@@ -21,8 +21,13 @@
 // }
 // console.log(total);
 
+// .............................................
+// Maths formula
+// .............................................
 // from Maths tricks
 // formula = (n*(n+1))/2
 let num = 10;
 let total = (num * (num + 1)) / 2; // from formula
 console.log(total);
+
+// This method is more faster than a while loop method because this take constant time and while loop take linear time
