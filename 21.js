@@ -13,10 +13,16 @@
 // total = total + 10;
 // console.log(total);
 
-let i = 0;
-let total = 0;
-while (i <= 200) {
-  total = total + i;
-  i++;
-}
+// let i = 0;
+// let total = 0;
+// while (i <= 200) {
+//   total = total + i;
+//   i++;
+// }
+// console.log(total);
+
+// from Maths tricks
+// formula = (n*(n+1))/2
+let num = 10;
+let total = (num * (num + 1)) / 2; // from formula
 console.log(total);
