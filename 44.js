@@ -37,3 +37,41 @@ console.log(returnedValue);
 
 // console.log(undefined + undefined); // NaN
 // when we pass value to the functions is called argument
+
+// More example
+// sumThreeNumber
+function sumThreeNumber(num1, num2, num3) {
+  return num1 + num2 + num3;
+}
+console.log(sumThreeNumber(1, 1, 55));
+
+// Odd and even number example
+//  isEven
+// input number
+// Output true/false
+
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// const retur = isEven(11);
+// console.log(retur);
+
+// In short
+
+// function isEven(number) {
+//   if (number % 2 === 0) {
+//     return true;
+//   }
+//   return false;
+// }
+
+// Even more shorter
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+console.log(isEven(3));
