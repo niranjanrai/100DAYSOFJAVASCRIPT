@@ -98,5 +98,5 @@ function findTarget(array, target) {
   return -1;
 }
 // const result = findTarget([1, 2, 3, 4, 5, 6, 7, 8], 2);
-// const result = findTarget(["Nir", "Manoj", "Shravan", "Chandan"], "Manoj");
+const result = findTarget(["Nir", "Manoj", "Shravan", "Chandan"], "Manoj");
 console.log(result);
