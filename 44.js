@@ -70,8 +70,17 @@ console.log(sumThreeNumber(1, 1, 55));
 // }
 
 // Even more shorter
-function isEven(number) {
-  return number % 2 === 0;
-}
+// function isEven(number) {
+//   return number % 2 === 0;
+// }
 
-console.log(isEven(3));
+// console.log(isEven(3));
+
+// first Character return function
+// input:string
+// output:firstcharacter of string
+
+function firstChar(anyString) {
+  return anyString[0];
+}
+console.log(firstChar("Nir"));
