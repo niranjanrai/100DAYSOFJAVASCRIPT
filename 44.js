@@ -80,7 +80,23 @@ console.log(sumThreeNumber(1, 1, 55));
 // input:string
 // output:firstcharacter of string
 
-function firstChar(anyString) {
-  return anyString[0];
+// function firstChar(anyString) {
+//   return anyString[0];
+// }
+// console.log(firstChar("Nir"));
+
+// example
+// input: string target
+// output:index of the target present in string
+
+function findTarget(array, target) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === target) {
+      return i;
+    }
+  }
+  return -1;
 }
-console.log(firstChar("Nir"));
+// const result = findTarget([1, 2, 3, 4, 5, 6, 7, 8], 2);
+// const result = findTarget(["Nir", "Manoj", "Shravan", "Chandan"], "Manoj");
+console.log(result);
