@@ -90,4 +90,8 @@ function myFunc() {
 }
 myFunc();
 
+const myFunction = () => {
+  
+};
+
 // myFunc(myFunc2);
