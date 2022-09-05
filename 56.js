@@ -34,3 +34,15 @@
 // nir.calcAge();
 
 //  closure
+
+// console.log("nir");
+// function can return function
+function myFunc() {
+  return hello();
+}
+const ans = myFunc();
+console.log(ans);
+
+function hello() {
+  console.log("hello from func2");
+}
