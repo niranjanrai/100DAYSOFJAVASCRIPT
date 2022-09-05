@@ -37,12 +37,22 @@
 
 // console.log("nir");
 // function can return function
-function myFunc() {
-  return hello();
-}
-const ans = myFunc();
-console.log(ans);
+// function outerFunction() {
+//   function innerFunction() {
+//     console.log("hello world");
+//   }
+//   return innerFunction;
+// }
+// const ans = outerFunction();
+// console.log(ans);
+//  ans();
 
-function hello() {
-  console.log("hello from func2");
+function printFullName(firstName, lastName) {
+  function printName() {
+    console.log(firstName, lastName);
+  }
+  return printName;
 }
+const ans = printFullName("Nir", "Rai");
+// console.log(ans);
+ans();
