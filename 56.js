@@ -24,11 +24,13 @@
 
 // calcAgeArrow(1988);
 
-const nir = {
-  year: 1998,
-  calcAge: function () {
-    console.log(this);
-    console.log(2037 - this.year);
-  },
-};
-nir.calcAge();
+// const nir = {
+//   year: 1998,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2037 - this.year);
+//   },
+// };
+// nir.calcAge();
+
+//  closure
