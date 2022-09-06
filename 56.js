@@ -56,5 +56,3 @@ function printFullName(firstName, lastName) {
 const ans = printFullName("Nir", "Rai");
 // console.log(ans);
 ans();
-
-// promise
