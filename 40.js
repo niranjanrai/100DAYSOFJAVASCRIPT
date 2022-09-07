@@ -24,5 +24,7 @@ const obj2 = {
 };
 
 // const newObj = { ...obj1, ...obj2 };
-const newObj = { ...obj1, ...obj2, key55: "value55" };
+// const newObj = { ...obj1, ...obj2, key55: "value55" };
+// const newObj = { ..."abcd" }; // string
+const newObj = { ...[4, 5, 4, 4, 4, 5, 4, 5] }; // array
 console.log(newObj);
