@@ -1,3 +1,5 @@
+"use strict";
+
 // hoisting
 
 // hello();
@@ -13,19 +15,27 @@
 // };
 
 // Arrow function
-const hello = () => {
-  console.log("hello world");
-};
+// const hello = () => {
+//   console.log("hello world");
+// };
 
-hello();
+// hello();
 
 //
-console.log(firstName); // undefined
-var firstName = "Nir"; // undefined in case of var
-console.log(firstName); // 'Nir'
+// console.log(firstName); // undefined
+// var firstName = "Nir"; // undefined in case of var
+// console.log(firstName); // 'Nir'
 
 // but give error in let and const
 // console.log(lastName); // cannot access before initialization
-let lastName = "Rai"; // uncaught reference error
+// let lastName = "Rai"; // uncaught reference error
 // console.log(lastName);
 // same in case of const
+
+// console.log("hoisting");
+
+hello();
+
+function hello() {
+  console.log("hello world");
+}
