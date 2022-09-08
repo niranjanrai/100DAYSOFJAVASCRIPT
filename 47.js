@@ -34,8 +34,25 @@
 
 // console.log("hoisting");
 
-hello();
+// hello();
 
-function hello() {
-  console.log("hello world");
+// function hello() {
+//   console.log("hello world");
+// }
+
+{
+  let firstName = "Nir";
+  {
+    {
+      {
+        {
+          {
+            console.log(firstName);
+          }
+        }
+      }
+    }
+  }
+  // console.log(firstName);
 }
+// console.log(firstName);
