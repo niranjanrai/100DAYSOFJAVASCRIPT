@@ -74,22 +74,39 @@
 // const obj = {
 //   firstName: "Nir",
 // };
-const myVar = "Global scope";
-function myFunc() {
-  // const myVar = "value1";
-  console.log(myVar);
-  function myFunc1() {
-    const myVar = "inside myFunk1";
-    function myFunc2() {
-      const myVar = "Inside ";
-      console.log("value of myFnc1", myVar);
-    }
-    myFunc2();
-  }
-  myFunc1();
-}
-myFunc();
+// const myVar = "Global scope";
+// function myFunc() {
+//   // const myVar = "value1";
+//   console.log(myVar);
+//   function myFunc1() {
+//     const myVar = "inside myFunk1";
+//     function myFunc2() {
+//       const myVar = "Inside ";
+//       console.log("value of myFnc1", myVar);
+//     }
+//     myFunc2();
+//   }
+//   myFunc1();
+// }
+// myFunc();
 
-const myFunction = () => {};
+// const myFunction = () => {};
 
 // myFunc(myFunc2);
+
+// ...........................................................
+// Function returning function
+
+function myFunc() {
+  // return "a"; // string
+  // return [1, 2, 3]; // array
+  // return { firstName: "Niranjan" }; // object
+  return myFunc1(); // function
+}
+
+const ans = myFunc();
+console.log(ans);
+
+function myFunc1() {
+  return "hello from myFunc1";
+}

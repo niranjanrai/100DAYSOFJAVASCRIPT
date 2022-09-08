@@ -47,12 +47,35 @@
 // console.log(ans);
 //  ans();
 
-function printFullName(firstName, lastName) {
-  function printName() {
-    console.log(firstName, lastName);
-  }
-  return printName;
+// function printFullName(firstName, lastName) {
+//   function printName() {
+//     console.log(firstName, lastName);
+//   }
+//   return printName;
+// }
+// const ans = printFullName("Nir", "Rai");
+// // console.log(ans);
+// ans();
+
+// ...........................................................................
+
+// important array method
+// for each method
+
+const numbers = [1, 2, 3, 4, 5, 6];
+function addTwo(num, index) {
+  console.log(`index is ${index} and number is ${num * 2}`);
+  // console.log(`${num}*2 = ${num * 2}`);
 }
-const ans = printFullName("Nir", "Rai");
-// console.log(ans);
-ans();
+
+// addTwo(numbers[0], 0);
+// addTwo(numbers[1], 1);
+
+// for (let i = 0; i < numbers.length; i++) {
+// console.log(i);
+// addTwo(numbers[i], i);
+// console.log();
+// }
+
+// for each
+numbers.forEach(addTwo);
