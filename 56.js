@@ -79,3 +79,14 @@ function addTwo(num, index) {
 
 // for each
 numbers.forEach(addTwo);
+
+const user = [
+  { firstName: "Nir", gender: "male" },
+  { firstName: "Manoj", gender: "male" },
+  { firstName: "Shravan", gender: "male" },
+  { firstName: "Shubham", gender: "male" },
+];
+
+user.forEach(function (user, index) {
+  console.log(user);
+});
