@@ -78,7 +78,7 @@ function addTwo(num, index) {
 // }
 
 // for each
-numbers.forEach(addTwo);
+// numbers.forEach(addTwo);
 
 const user = [
   { firstName: "Nir", gender: "male" },
