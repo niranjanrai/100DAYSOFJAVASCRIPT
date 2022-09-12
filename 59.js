@@ -43,12 +43,11 @@
 //   console.log(x); // ReferenceError x is not defined
 // }
 
-
-let firstName = 'Niranjan'
-let lastName = 'Rai'
-const myFunction =function(){
-  console.log('hello from myFunction')
-}
-console.log(firstName)// 'Niranjan'
-console.log(lastName) // 'Rai'
-console.log(myFunction()) // hello from myFunction
+let firstName = "Niranjan";
+let lastName = "Rai";
+const myFunction = function () {
+  console.log("hello from myFunction");
+};
+console.log(firstName); // 'Niranjan'
+console.log(lastName); // 'Rai'
+console.log(myFunction()); // hello from myFunction
