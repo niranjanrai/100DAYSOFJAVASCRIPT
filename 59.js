@@ -34,11 +34,21 @@
 
 // TDZ Examples
 
-const myName = "Niranjan";
-if (myName === "Niranjan") {
-  console.log(`Niranjan is a ${job}`); // ReferenceError: Cannot access 'job' before initialization
-  const gender = "Male";
-  console.log(gender);
-  const job = "Coder";
-  console.log(x); // ReferenceError x is not defined
+// const myName = "Niranjan";
+// if (myName === "Niranjan") {
+//   console.log(`Niranjan is a ${job}`); // ReferenceError: Cannot access 'job' before initialization
+//   const gender = "Male";
+//   console.log(gender);
+//   const job = "Coder";
+//   console.log(x); // ReferenceError x is not defined
+// }
+
+
+let firstName = 'Niranjan'
+let lastName = 'Rai'
+const myFunction =function(){
+  console.log('hello from myFunction')
 }
+console.log(firstName)// 'Niranjan'
+console.log(lastName) // 'Rai'
+console.log(myFunction()) // hello from myFunction
