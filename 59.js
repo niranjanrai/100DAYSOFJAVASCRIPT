@@ -73,8 +73,24 @@
 
 // secondFunction();
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 5, 7, 8, 9];
-const numbers = [2, 4, 6, 8];
+// const numbers = [2, 4, 6, 8];
 
-const result = numbers.every((number) => number % 2 === 0);
-console.log(result);
-console.log(numbers);
+// const result = numbers.every((number) => number % 2 === 0);
+// console.log(result);
+// console.log(numbers);
+
+const userCart = [
+  { productId: 1, productName: "Mobile", price: 12000 },
+  { productId: 2, productName: "Laptop", price: 50000 },
+  { productId: 2, productName: "TV", price: 30000 },
+];
+
+// console.log(userCart.every((userItem) => userItem.price < 100000));
+
+// function checkEvery(user) {
+//   return user.price < 100000;
+// }
+
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers.some((number) => number % 2 === 0)); // even
+// console.log(numbers.some((number) => number % 2 !== 0)); // odd
