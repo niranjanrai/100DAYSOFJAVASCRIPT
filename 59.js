@@ -43,11 +43,38 @@
 //   console.log(x); // ReferenceError x is not defined
 // }
 
-let firstName = "Niranjan";
-let lastName = "Rai";
-const myFunction = function () {
-  console.log("hello from myFunction");
-};
-console.log(firstName); // 'Niranjan'
-console.log(lastName); // 'Rai'
-console.log(myFunction()); // hello from myFunction
+// let firstName = "Niranjan";
+// let lastName = "Rai";
+// const myFunction = function () {
+//   console.log("hello from myFunction");
+// };
+// console.log(firstName); // 'Niranjan'
+// console.log(lastName); // 'Rai'
+// console.log(myFunction()); // hello from myFunction
+
+// function one() {
+//   console.log("1"); // executed first
+//   function two() {
+//     console.log("7"); // executed second
+//   }
+//   two();
+//   console.log("new string"); // executed third
+// }
+// one();
+
+// function firstFunction() {
+//   console.log("Hello from firstFunction");
+// }
+
+// function secondFunction() {
+//   firstFunction();
+//   console.log("The end from secondFunction");
+// }
+
+// secondFunction();
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 5, 7, 8, 9];
+const numbers = [2, 4, 6, 8];
+
+const result = numbers.every((number) => number % 2 === 0);
+console.log(result);
+console.log(numbers);
