@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: "poppins", sans-serif;
+}
+a {
+  color: white;
+}
+.header {
+  min-height: 60vh;
+  background: url(./bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 8vh;
+}
+
+.nav-items {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-headline {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.todo-section {
+  margin-top: 5rem;
+  text-align: center;
+}
+.form-todo {
+  margin-top: 1rem;
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.form-todo input {
+  min-height: 100%;
+}
+.form-todo input[type="text"] {
+  width: 78%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-todo input[type="submit"] {
+  width: 20%;
+  background: #2c373f;
+  color: white;
+  font-weight: 600;
+}
+
+.section-signup {
+  margin: 5rem auto;
+  text-align: center;
+  background: rgb(235, 232, 232);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.signup-form {
+  max-width: 800px;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+}
+.signup-form label {
+  display: block;
+}
+.signup-form input {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+}
+.signup-form textarea {
+  width: 100%;
+}
+.form-group {
+  margin: 1rem;
+}
+
+.signup-btn {
+  background: #2c373f;
+  color: white;
+  padding: 1rem 2rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
