@@ -7,5 +7,5 @@ const userCart = [
   { productId: 2, productName: "MacBook", price: 250000 },
 ];
 
-// const ans = userCart.some((userItem) => userItem.price > 100000);
+const ans = userCart.some((userItem) => userItem.price > 100000);
 console.log(ans);
