@@ -166,7 +166,7 @@ const userMethod = {
     return this.age >= 18;
   },
   sing: function () {
-    // return "toon na na na la la ";
+    return "toon na na na la la ";
   },
 };
 
