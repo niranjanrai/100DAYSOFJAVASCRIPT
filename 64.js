@@ -52,20 +52,20 @@ function about(hobby, favMusician) {
   console.log(this.firstName, this.age, hobby, favMusician);
 }
 
-const user1 = {
-  firstName: "Niranjan",
-  age: 8,
-  // about: function(hobby, favMusician) {
-  //   console.log(this.firstName, this.age, hobby, favMusician)
-  // }
-};
+// const user1 = {
+//   firstName: "Niranjan",
+//   age: 8,
+// about: function(hobby, favMusician) {
+//   console.log(this.firstName, this.age, hobby, favMusician)
+// }
+// };
 
-const user2 = {
-  firstName: "Manoj",
-  age: 6,
-};
+// const user2 = {
+//   firstName: "Manoj",
+//   age: 6,
+// };
 
-about.call(user2, "coding", "Mohit-Chauhan"); // call method
+// about.call(user2, "coding", "Mohit-Chauhan"); // call method
 // user1.about.call(user1) // call method
 
 // apply
@@ -166,7 +166,7 @@ const userMethod = {
     return this.age >= 18;
   },
   sing: function () {
-    return "toon na na na la la ";
+    // return "toon na na na la la ";
   },
 };
 
