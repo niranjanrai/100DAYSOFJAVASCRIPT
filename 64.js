@@ -168,24 +168,24 @@ const userMethod = {
   sing: function () {
     return "toon na na na la la ";
   },
-};
+// };
 
-// --> function that  create object
-// --> add key value pair
-// --> return that object
+// // --> function that  create object
+// // --> add key value pair
+// // --> return that object
 
-function createUser(firstName, lastName, age, email, address) {
-  const user = {};
-  user.firstName = firstName;
-  user.lastName = lastName;
-  user.age = age;
-  user.email = email;
-  user.address = address;
-  user.about = userMethod.about;
-  user.is18 = userMethod.is18;
-  user.sing = userMethod.sing;
-  return user;
-}
+// function createUser(firstName, lastName, age, email, address) {
+//   const user = {};
+//   user.firstName = firstName;
+//   user.lastName = lastName;
+//   user.age = age;
+//   user.email = email;
+//   user.address = address;
+//   user.about = userMethod.about;
+//   user.is18 = userMethod.is18;
+//   user.sing = userMethod.sing;
+//   return user;
+// }
 
 const user1 = createUser(
   "Niranjan",
