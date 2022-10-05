@@ -187,13 +187,13 @@ const userMethod = {
 //   return user;
 // }
 
-const user1 = createUser{
-  firstName:"Niranjan",
-  lastName:"Rai",
-  age:18,
-  email:"rainiranjan1998@gmail.com",
-  add:"city"
-  };
+const user1 = createUser(
+  "Niranjan",
+  "Rai",
+  18,
+  "rainiranjan1998@gmail.com",
+  "city"
+)
 const user2 = createUser(
   "Manoj",
   "Saroj",
