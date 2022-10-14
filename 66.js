@@ -370,5 +370,6 @@ const user6 = Object.create(user5);
 user6.key6 = "value6";
 console.log(user6);
 console.log(user6.__proto__);
+
 // user6.__proto__ = user5;
 // __proto__  , [[prototype]] ---> object.create()
