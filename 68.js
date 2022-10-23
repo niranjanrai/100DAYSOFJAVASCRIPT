@@ -3,7 +3,7 @@
 
 let counter = 0;
 function printHello() {
-  console.log("hello");
+  // console.log("hello");
   counter++;
   console.log(counter);
 
