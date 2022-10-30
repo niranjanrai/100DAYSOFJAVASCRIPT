@@ -1,9 +1,9 @@
-// function iside function
+function iside function
 
-// const app = () => {
-//   console.log("inside app");
-// };
-// app();
+const app = () => {
+  console.log("inside app");
+};
+app();
 
 //
 function app() {
