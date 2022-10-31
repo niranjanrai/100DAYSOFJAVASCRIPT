@@ -25,9 +25,17 @@ const restuarant = {
   },
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-    //
+  },
+  orderDelevery: function (obj) {
+    console.log(obj);
   },
 };
+restuarant.orderDelevery({
+  time: "22:10",
+  address: "vapi, surat",
+  mainIndex: 2,
+  starterIndex: 2,
+});
 
 const { name, openingHours, categories } = restuarant;
 console.log(name, openingHours, categories);
@@ -40,5 +48,20 @@ const {
 } = restuarant;
 console.log(restuarantName, hours, tags);
 
+// Default values
 const { menu = [], starterMenu: starters = [] } = restuarant;
 console.log(menu, starters);
+
+// Mutating Variables
+let a = 111;
+let b = 999;
+const obj = { a: 2, b: 7, c: 14 };
+({ a, b } = obj);
+console.log(a, b);
+
+// nested object
+const {
+  fri: { open, close },
+} = openingHours;
+
+console.log(open, close);
