@@ -42,7 +42,14 @@ const restuarant = {
       `Here is your delecious pasta with ${ing1}, ${ing2}, and  ${ing3}`
     );
   },
+
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
 };
+
+//  1.  ---> Destructuring
 
 // SPREAD, because on RIGHT side of =
 
@@ -61,3 +68,29 @@ const [pizza, , risotto, ...othersFoods] = [
 ];
 
 console.log(pizza, risotto, othersFoods);
+
+// Objects
+const { sat, ...weekdays } = restuarant.openingHours;
+console.log(sat, weekdays);
+
+//  2.  ---> Functions
+
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    //   sum = sum + numbers[i];
+    sum += numbers[i];
+  }
+  console.log(sum);
+};
+
+add(1, 5);
+add(2, 5, 6, 8);
+add(2, 5, 6, 8, 8, 8, 7, 9);
+
+const x = [1, 5, 5, 87, 54];
+
+add(...x);
+
+restuarant.orderPizza("mushroom", "onions", "spinach", " paneer", "olives");
+restuarant.orderPizza("onion");
