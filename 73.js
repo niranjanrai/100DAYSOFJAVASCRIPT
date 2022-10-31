@@ -51,3 +51,20 @@ ayushi.me = Niranjan.me; // method borrowing
 
 console.log(ayushi);
 ayushi.me(); // here the this keyword point to the ayushi
+
+// agrument keyword
+
+const addExpression = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+
+addExpression(4, 9);
+addExpression(4, 9, 1, 5);
+
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+
+console.log(addArrow(1, 9, 4, 5));
