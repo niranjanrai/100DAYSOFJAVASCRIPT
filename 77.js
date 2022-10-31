@@ -1,4 +1,5 @@
 // Spread Operator
+
 "use strict";
 
 const restuarant = {
@@ -35,6 +36,12 @@ const restuarant = {
       `Ordered recieved ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delevered to ${address} at ${time}  `
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delecious pasta with ${ing1}, ${ing2}, and  ${ing3}`
+    );
+  },
 };
 
 const arr = [5, 6, 7];
@@ -57,3 +64,36 @@ const joinedArr = [...restuarant.mainMenu, ...newMenu];
 const menu = [...restuarant.mainMenu, ...restuarant.starterMenu];
 console.log(menu);
 console.log(joinedArr);
+
+// Iterables: arrays, strings, sets, maps NOT object
+
+const firstName = "Niranjan";
+const letters = [...firstName, "", "R"];
+console.log(letters);
+
+const ingredients = [
+  //   prompt("Let's make pasta! ingredients-1"),
+  //   prompt(" ingredients-2"),
+  //   prompt("ingredients-3"),
+];
+
+console.log(ingredients);
+
+restuarant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+restuarant.orderPasta(...ingredients);
+
+// Object
+
+const newRestuarant = {
+  ...restuarant,
+  founder: "Niranjan",
+  foundingYear: 2010,
+};
+console.log(newRestuarant);
+
+// make a object copy
+const copyObj = { ...restuarant };
+console.log(copyObj);
+copyObj.name = "papilon";
+console.log(copyObj.name);
+console.log(restuarant.name);
