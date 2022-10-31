@@ -26,15 +26,27 @@ const restuarant = {
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
-  orderDelevery: function (obj) {
-    console.log(obj);
+  orderDelevery: function ({
+    starterIndex = 1,
+    mainIndex = 0,
+    time = "20:00",
+    address,
+  }) {
+    console.log(
+      `Ordered recieved ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delevered to ${address} at ${time}  `
+    );
   },
 };
 restuarant.orderDelevery({
-  time: "22:10",
+  time: "22:30",
   address: "vapi, surat",
   mainIndex: 2,
   starterIndex: 2,
+});
+
+restuarant.orderDelevery({
+  address: "vapi, surat",
+  starterIndex: 1,
 });
 
 const { name, openingHours, categories } = restuarant;
