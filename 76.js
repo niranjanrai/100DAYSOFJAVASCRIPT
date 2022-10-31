@@ -39,3 +39,6 @@ const {
   categories: tags,
 } = restuarant;
 console.log(restuarantName, hours, tags);
+
+const { menu = [], starterMenu: starters = [] } = restuarant;
+console.log(menu, starters);
