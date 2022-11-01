@@ -96,3 +96,17 @@ console.log(allPlayers);
 
 const player1Final = [...players1, "thiago", "coutinho", "periscic"];
 console.log(player1Final);
+
+// 5
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(team1, draw, team2);
+
+//  6
+
+const printGoals = function (...players) {
+  console.log(players);
+};
+printGoals("Niranjan", "Manoj", "Shravan", "Chandan");
+printGoals("Niranjan", "Manoj", "Shravan", "Chandan");
