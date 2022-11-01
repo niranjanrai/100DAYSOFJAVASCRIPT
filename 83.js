@@ -51,8 +51,8 @@ const main = [...restuarant.starterMenu, ...restuarant.mainMenu];
 console.log(main);
 
 for (let item of main) console.log(item);
-for (let item of main.entries()) {
-  console.log(item);
+for (let [i, el] of main.entries()) {
+  console.log(`${i + 1}: ${el}`);
 }
 
-console.log(main.entries());
+console.log([...main.entries()]);
