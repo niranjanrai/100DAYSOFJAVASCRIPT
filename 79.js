@@ -8,7 +8,6 @@ const restuarant = {
   categories: ["Italian", "pizzeria", "Vegetarian", "Organic"],
   starterMenu: ["Focaccia", "Bruchetta", "Garlic-bread", "Caprese salad"],
   mainMenu: ["Pizza", "Pasta", "Risotto"],
-
   openingHours: {
     thu: {
       open: 12,
@@ -49,4 +48,35 @@ const restuarant = {
   },
 };
 
+console.log("---- OR -----");
 console.log(3 || "Niranjan");
+console.log(true || "");
+console.log(true || 0);
+console.log("Niranjan" || "");
+console.log(undefined || null);
+console.log(undefined || null || 0 || "" || "hello" || 10);
+
+// restuarant.numGuest = 20;
+// restuarant.numGuest = 30;
+const guest1 = restuarant.numGuest ? restuarant.numGuest : 10;
+console.log(guest1);
+
+// short circuit
+const guest2 = restuarant.numGuest || 20;
+console.log(guest2);
+
+console.log("---- AND -----");
+
+console.log(0 && "Niranjan");
+console.log("hello" && 23 && null && "Niranjan" && undefined);
+
+// Example
+
+if (restuarant.orderPizza) {
+  restuarant.orderPizza("Mushroom", "spinach", "cheese");
+}
+
+// example with AND short circuit
+
+restuarant.orderPizza &&
+  restuarant.orderPizza("spinach", "mushrooms", "cheese");
