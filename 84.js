@@ -1,16 +1,17 @@
 // Optional Chaining
 
 "use strict";
+const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const openingHours = {
-  thu: {
+  [weekdays[3]]: {
     open: 12,
     close: 22,
   },
-  fri: {
+  [weekdays[4]]: {
     open: 11,
     close: 23,
   },
-  sat: {
+  [weekdays[5]]: {
     open: 0, // open 24 hour
     close: 24,
   },
@@ -46,4 +47,31 @@ const restuarant = {
 };
 
 console.log(restuarant);
+// console.log(restuarant.openingHours.mon.open);
+
+// With Optional Chaining
 console.log(restuarant.openingHours.mon?.open);
+
+// Examples
+
+const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+for (const day of days) {
+  //   console.log(restuarant.openingHours[day]?.open);
+  const open = restuarant.openingHours[day]?.open ?? "closed";
+  console.log(`On ${day}, we open at ${open}`);
+}
+
+// Methods
+console.log(restuarant.order?.(0, 1) ?? "Methods does not exist");
+console.log(restuarant.orde?.(0, 1) ?? "Methods does not exist");
+
+// Arrays
+const niranjan = [
+  {
+    name: "Niranjan",
+    email: "niranjan@gmail.com",
+  },
+];
+
+console.log(niranjan[0]?.name ?? "user array empty");
+console.log(niranjan[1]?.name ?? "user array empty");
