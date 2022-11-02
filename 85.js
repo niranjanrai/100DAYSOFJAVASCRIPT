@@ -55,3 +55,21 @@ for (let day of property) {
 }
 
 console.log(openStr);
+
+// property value
+
+const values = Object.values(openingHours);
+console.log(...values);
+
+// Entire Object
+
+const entries = Object.entries(openingHours);
+// const [i, j] = entries;
+
+console.log(entries);
+for (let [key, { open, close }] of entries) {
+  // console.log(x);
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
+// console.log(i);
+// console.log(j);
