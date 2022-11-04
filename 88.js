@@ -107,8 +107,17 @@ for (const [key, value] of question) {
 }
 3;
 
-const answer = Number(prompt("Your answer"));
+// const answer = Number(prompt("Your answer"));
+const answer = 3;
 
 // answer print
 
 console.log(question.get(question.get("correct") === answer));
+
+// Convert Map to Array
+console.log(...question);
+console.log(...question.entries(), "---> entries");
+console.log(...question.keys(), "---> keys");
+console.log([...question.keys()], "---> keys"); // with array
+console.log(...question.values(), "---> Values");
+console.log([...question.values()], "---> Values"); // with array
