@@ -1,6 +1,6 @@
 // Map Data Structure
 
-"use strict";
+// "use strict";
 const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const openingHours = {
   [weekdays[3]]: {
