@@ -46,3 +46,48 @@ const restuarant = {
     console.log(otherIngredients);
   },
 };
+
+console.log(..."hello");
+const airline = "Air India";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log(plane[3]);
+console.log("A320"[0]);
+
+console.log(airline.length);
+console.log("Air India".length);
+
+// Methods
+
+console.log(airline.indexOf("i"));
+console.log(airline.lastIndexOf("i"));
+
+console.log(airline.indexOf("India"));
+console.log(airline.indexOf("india")); // wrong give -1
+
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  // B and E are middle seat
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("You got the middle seat 😬");
+  else console.log("You got lucky");
+};
+
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+console.log(new String("Niranjan"));
+console.log(typeof new String("Niranjan")); // Object
+console.log(typeof new String("Niranjan").slice(-1)); // string
