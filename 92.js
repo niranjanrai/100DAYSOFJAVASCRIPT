@@ -66,3 +66,17 @@ const checkBaggae = function (items) {
 checkBaggae("i have a laptop, some foods and a pocket Knife ");
 checkBaggae("Snacks and Camera ");
 checkBaggae("Got some snacks and gun for bored");
+
+console.log(" ----------> Classes <-----------");
+
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+console.log(Rectangle.name);
+
+const here = new Rectangle(10, 10);
+console.log(here);
