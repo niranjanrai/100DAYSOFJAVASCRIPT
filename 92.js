@@ -47,7 +47,6 @@ console.log(plane.includes("Air320"));
 console.log(plane.includes("Boeing"));
 console.log(plane.startsWith("Air"));
 console.log(plane.startsWith("320"));
-
 if (plane.startsWith("Air") && plane.endsWith("neo")) {
   console.log("this is correct plane");
 }
