@@ -1,8 +1,8 @@
-console.log(this);
-console.log(window);
-console.log(firstName);
+// console.log(this);
+// console.log(window);
+// console.log(firstName);
 var firstName = "Niranjan";
-console.log(firstName);
+// console.log(firstName);
 
 function greet() {
   console.log("hello");
@@ -13,4 +13,26 @@ function greet() {
   ayushi();
 }
 
-greet();
+// greet();
+
+// Primitive vs reference as a Value
+
+const flight = "C420";
+const niranjan = {
+  passport: 4571241164,
+};
+
+const checkIn = function (flightNumb, passenger) {
+  flightNumb = "B220";
+  passenger.name = "Mr." + passenger.name;
+
+  if (passenger.passport === 4571241164) {
+    alert("You are checked In");
+  } else {
+    alert("invalid passport details");
+  }
+};
+
+checkIn(flight, niranjan);
+console.log(flight);
+console.log(niranjan);

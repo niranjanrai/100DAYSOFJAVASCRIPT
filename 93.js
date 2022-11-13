@@ -27,3 +27,4 @@ const createBooking = function (
 createBooking("A320", 200, 10000);
 createBooking("A320", 200);
 createBooking("A320", 5);
+createBooking("A320", undefined); // undefined ----> default value
