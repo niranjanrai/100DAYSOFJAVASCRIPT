@@ -19,6 +19,7 @@ function greet() {
 
 const flight = "C420";
 const niranjan = {
+  name: "Niranjan Rai",
   passport: 4571241164,
 };
 
