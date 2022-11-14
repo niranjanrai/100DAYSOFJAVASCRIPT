@@ -18,6 +18,7 @@ function greet() {
 // Primitive vs reference as a Value
 
 const flight = "C420";
+
 const niranjan = {
   name: "Niranjan Rai",
   passport: 4571241164,
@@ -37,3 +38,16 @@ const checkIn = function (flightNumb, passenger) {
 checkIn(flight, niranjan);
 console.log(flight);
 console.log(niranjan);
+
+// Is the same as doing...
+
+const flightNumb = flight;
+const passenger = niranjan;
+
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 10000000000);
+};
+
+newPassport(niranjan);
+console.log(typeof newPassport);
+checkIn(flight, niranjan);
