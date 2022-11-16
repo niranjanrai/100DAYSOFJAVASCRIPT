@@ -21,3 +21,19 @@ const runOnce = function () {
 }
 console.log(notPrivate);
 // console.log(isPrivate);
+
+//
+function MyObject(name, message) {
+  this.name = name.toString();
+  this.message = message.toString();
+  MyObject.prototype = {
+    getName() {
+      return this.name;
+    },
+    getMessage() {
+      return this.message;
+    },
+  };
+}
+// MyObject("Niranjan", "niranjan");
+// MyObject().getMessage;

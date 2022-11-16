@@ -90,13 +90,13 @@ console.log(sumThreeNumber(1, 1, 55));
 // output:index of the target present in string
 
 function findTarget(array, target) {
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] === target) {
-      return i;
+      return `${array[i]}, ${i}`;
     }
   }
   return -1;
 }
 // const result = findTarget([1, 2, 3, 4, 5, 6, 7, 8], 2);
-const result = findTarget(["Nir", "Manoj", "Shravan", "Chandan"], "Manoj");
+const result = findTarget(["Nir", "Manoj", "Shravan", "Chandan"], "Nir");
 console.log(result);
