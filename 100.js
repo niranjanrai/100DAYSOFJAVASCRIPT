@@ -433,3 +433,6 @@ document.querySelector('.logo').addEventListener('click', () => {
 // console.log(+future);
 
 //
+
+const me = new Promise();
+console.log(me);
